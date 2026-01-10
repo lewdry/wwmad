@@ -305,6 +305,13 @@ main {
   transform: scale(0.95);
 }
 
+/* Ensure default state is properly set when not active */
+.action-btn:not(.action-btn--active) {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  color: var(--color-text-secondary);
+}
+
 .action-btn--active {
   background: var(--color-primary) !important;
   color: var(--color-surface) !important;
