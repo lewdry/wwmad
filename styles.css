@@ -627,7 +627,7 @@ main {
   }
 
   .card {
-    padding: var(--space-lg) var(--space-md);
+    padding: var(--space-md);
   }
 
   .favourites-list {
