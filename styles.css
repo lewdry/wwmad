@@ -604,11 +604,16 @@ main {
 @media (max-width: 479px) {
   main {
     justify-content: flex-start;
-    padding-top: var(--space-md);
+    padding-top: var(--space-sm);
+    padding-bottom: 60px;
   }
 
   header {
-    padding-bottom: var(--space-md);
+    padding: var(--space-md) var(--space-md) var(--space-sm);
+  }
+
+  .card {
+    padding: var(--space-lg) var(--space-md);
   }
 }
 
