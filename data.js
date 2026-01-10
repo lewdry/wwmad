@@ -299,6 +299,12 @@ const MEDITATIONS_DATA = {
       "text": "Thou hast it in thy power that the current of thy life be ever fair, if also 'tis thine to make fair way, if also in ordered way to think and act.",
       "book": "Book V",
       "section": "XXXIV"
+    },
+    {
+      "id": 51,
+      "text": "Put an end once for all to this discussion of what a good man should be, and be one.",
+      "book": "Book X",
+      "section": "XVI"
     }
   ]
 };
