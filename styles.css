@@ -629,6 +629,14 @@ main {
   .card {
     padding: var(--space-lg) var(--space-md);
   }
+
+  .favourites-list {
+    padding: var(--space-sm);
+  }
+
+  .about-content {
+    padding: var(--space-md) var(--space-md);
+  }
 }
 
 @media (min-width: 480px) {
