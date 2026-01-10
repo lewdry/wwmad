@@ -599,6 +599,19 @@ main {
 }
 
 /* --- Media Queries --- */
+
+/* Mobile optimization - align card to top on small screens */
+@media (max-width: 479px) {
+  main {
+    justify-content: flex-start;
+    padding-top: var(--space-md);
+  }
+
+  header {
+    padding-bottom: var(--space-md);
+  }
+}
+
 @media (min-width: 480px) {
   header h1 {
     font-size: 2rem;
