@@ -306,9 +306,23 @@ main {
 }
 
 .action-btn--active {
+  background: var(--color-primary) !important;
+  color: var(--color-surface) !important;
+  border-color: var(--color-primary) !important;
+}
+
+/* Ensure active state overrides :active pseudo-class on iOS */
+.action-btn--active:active {
+  background: var(--color-primary) !important;
+  color: var(--color-surface) !important;
+  border-color: var(--color-primary) !important;
+}
+
+.action-btn--active:hover {
   background: var(--color-primary);
   color: var(--color-surface);
   border-color: var(--color-primary);
+  transform: translateY(-2px);
 }
 
 /* --- Bottom Navigation --- */
