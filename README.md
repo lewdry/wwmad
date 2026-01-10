@@ -11,4 +11,4 @@ Your favorites are stored locally in your browser, so they'll be there next time
 
 ## About the text
 
-The quotes come from C. R. Haines's translation of the Meditations, which is in the public domain. The text file is included in this repository.
+The quotes come from C. R. Haines's 1916 translation of Meditations, which is in the public domain. The text file is included in this repository.

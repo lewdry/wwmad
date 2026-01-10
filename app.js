@@ -43,6 +43,8 @@
   const closeAbout = document.getElementById('close-about');
   const favouriteBtn = document.getElementById('favourite-btn');
   const swipeHints = document.querySelectorAll('.swipe-hint');
+  const swipeHintLeft = document.querySelector('.swipe-hint--left');
+  const swipeHintRight = document.querySelector('.swipe-hint--right');
   const swipeInstruction = document.getElementById('swipe-instruction');
 
   // --- Initialization ---
@@ -610,6 +612,15 @@ The quotes come from C. R. Haines's 1916 translation of the Meditations, which i
     aboutTab.addEventListener('click', showAbout);
     closeAbout.addEventListener('click', hideAbout);
     favouriteBtn.addEventListener('click', () => toggleFavourite(false));
+
+    // Swipe hint clicks
+    swipeHintLeft.addEventListener('click', () => {
+      goToPreviousMeditation();
+    });
+
+    swipeHintRight.addEventListener('click', () => {
+      goToNextMeditation();
+    });
 
     // Keyboard support
     document.addEventListener('keydown', (e) => {
