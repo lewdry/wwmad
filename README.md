@@ -1,0 +1,2 @@
+# wwmad
+A Stoic Reminder
