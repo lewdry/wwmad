@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="description"
+    content="What Would Marcus Aurelius Do? — Stoic inspiration selected at random from the Meditations.">
+  <title>What Would Marcus Aurelius Do?</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div id="app">
+    <header>
+      <h1>What Would Marcus Aurelius Do?</h1>
+      <p class="subtitle">Stoic inspiration selected at random</p>
+    </header>
+
+    <main id="main-view">
+      <div class="card-container">
+        <div class="swipe-hint swipe-hint--left" aria-hidden="true">
+          <span class="hint-icon">←</span>
+        </div>
+
+        <div id="card" class="card" role="article" aria-live="polite">
+          <blockquote id="quote-text" class="card__quote"></blockquote>
+          <cite id="quote-source" class="card__source"></cite>
+        </div>
+
+        <div class="swipe-hint swipe-hint--right" aria-hidden="true">
+          <span class="hint-icon">→</span>
+        </div>
+      </div>
+
+      <div class="action-bar">
+        <button id="favourite-btn" class="action-btn" aria-label="Favourite this meditation">
+          <span class="action-icon">♥</span>
+        </button>
+      </div>
+
+      <p class="instruction" id="swipe-instruction">Swipe to explore</p>
+    </main>
+
+    <section id="favourites-view" class="favourites-view" hidden>
+      <div class="favourites-header">
+        <h2>Favourites</h2>
+        <button id="close-favourites" class="close-btn" aria-label="Close favourites">✕</button>
+      </div>
+
+      <div id="favourites-list" class="favourites-list">
+        <!-- Favourites will be rendered here -->
+      </div>
+
+      <p id="empty-message" class="empty-message" hidden>
+        Swipe right on a meditation to save it here.
+      </p>
+    </section>
+
+    <section id="about-view" class="about-view" hidden>
+      <div class="about-header">
+        <h2>About</h2>
+        <button id="close-about" class="close-btn" aria-label="Close about">✕</button>
+      </div>
+
+      <div id="about-content" class="about-content">
+        <!-- README content will be rendered here -->
+      </div>
+    </section>
+
+    <nav class="bottom-nav">
+      <button id="favourites-tab" class="nav-tab">
+        <span class="nav-icon">♥</span>
+        <span class="nav-label">Favourites</span>
+      </button>
+      <button id="about-tab" class="nav-tab">
+        <span class="nav-icon">ⓘ</span>
+        <span class="nav-label">About</span>
+      </button>
+    </nav>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>
