@@ -615,11 +615,16 @@ The quotes come from C. R. Haines's 1916 translation of the Meditations, which i
 
     // Swipe hint clicks
     swipeHintLeft.addEventListener('click', () => {
-      goToPreviousMeditation();
+      if (historyIndex > 0) {
+        completeNavigation('prev');
+      } else {
+        triggerHaptic('failure');
+        bounceCard();
+      }
     });
 
     swipeHintRight.addEventListener('click', () => {
-      goToNextMeditation();
+      completeNavigation('next');
     });
 
     // Keyboard support
